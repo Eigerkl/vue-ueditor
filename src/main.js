@@ -6,8 +6,13 @@ import router from './router'
 import Vuex from 'vuex'
 import axios from 'axios'
 import ElementUI from 'element-ui'
-// 倒入 http 文件夹下的 index.js
+// 倒入 http 文件夹下的 index.js.js
 import api from './http/index'
+//引入UEditor需要的文件，顺序很重要
+import '../static/UE/ueditor.config'
+import '../static/UE/ueditor.all.min'
+import '../static/UE/lang/zh-cn/zh-cn'
+import '../static/UE/ueditor.parse.min'
 
 
 Vue.use(Vuex);
